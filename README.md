@@ -21,6 +21,12 @@
 When n is sufficiently large, there is a threshold value p* such that when p < p* a random n-by-n grid almost never percolates, and when p > p*, a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. Your task is to write a computer program to estimate p*.
 
 
+## Solution
+
+* To use WeightedQuickUnion as our data structure with O(N+M log* N) time complexity
+* Add two virtual nodes which use to indicate status of top row and bottom row
+* Add extra WeightedQuickUnion data structure to store open sites 
+
 ## Testing
 
 1. make sure algs4.jar already in your classpath
